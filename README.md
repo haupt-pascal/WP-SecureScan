@@ -7,6 +7,16 @@ WP-SecureScan is a script designed to check for Malware inside your Wordpress In
 Even if this script is up to date with the recent Malware I am not a witch! If you have any further information about Malware in Wordpress instances or need updates for some kind of code please tell me within a issue! 
 ## Running
 
+
+```bash
+Usage: ./malware_scanner.sh [--perms, -p] [--verbose, -p] [--help, -h]
+
+Options:
+--perms, -p      Fix file permissions
+--verbose, -v    Enable interactive reporting
+--help, -h       Display this help message
+```
+
 To run it directly within the download you can use the following bash line in the directory you want to scan: 
 
 ```bash
@@ -19,7 +29,7 @@ If you don't want to download it directly and start you just can do the followin
 ```bash
 wget https://raw.githubusercontent.com/haupt-pascal/WP-SecureScan/main/malware_scanner.sh\?token\=GHSAT0AAAAAACRBSWFRLIGOJ2NRYYV3VEOQZR5F7GQ
 
-sh malware_scanner.sh
+sh malware_scanner.sh -v
 ```
 ## Contributing
 
